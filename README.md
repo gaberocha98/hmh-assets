@@ -2,6 +2,13 @@
 
 Public static assets for Hacking Men's Health content generation.
 
+## Brand identity (canonical)
+Match Gabe's Instagram profile on every carousel card:
+- **Display name:** Gabe Rocha
+- **Handle:** @gabexrocha
+- **Avatar:** `gabe-profile.jpg`
+- Verified badge: on
+
 ## Files
 - `gabe-profile.jpg` — 160x160 avatar, used by carousel generators
 - `carousel.html` — self-contained tweet-card carousel template (edit `SLIDES`, `NAME`, `HANDLE`)
