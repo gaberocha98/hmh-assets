@@ -11,7 +11,8 @@ Match Gabe's Instagram profile on every carousel card:
 - **CTA keyword:** PEP (use on all carousel CTAs, e.g. `Comment "PEP"`)
 
 ## Files
-- `gabe-profile.jpg` — 160x160 avatar, used by carousel generators
+- `gabe-profile.jpg` — square avatar, used by carousel generators
+- `cta-book.png` — EON Research "Research Protocol Library" book (transparent), used on the CTA slide
 - `carousel.html` — self-contained tweet-card carousel template (edit `SLIDES`, `NAME`, `HANDLE`)
 - `render.js` — renders each slide in `carousel.html` to an exact 1080x1350 PNG (2x) in `slides/`
 - `slides/slide-1..7.png` — rendered "Why alcohol hits harder on Reta" carousel
