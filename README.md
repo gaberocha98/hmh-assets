@@ -8,6 +8,7 @@ Match Gabe's Instagram profile on every carousel card:
 - **Handle:** @gabexrocha
 - **Avatar:** `gabe-profile.jpg`
 - Verified badge: on
+- **CTA keyword:** PEP (use on all carousel CTAs, e.g. `Comment "PEP"`)
 
 ## Files
 - `gabe-profile.jpg` — 160x160 avatar, used by carousel generators
