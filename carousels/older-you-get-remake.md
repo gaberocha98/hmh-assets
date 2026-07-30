@@ -205,6 +205,6 @@ Future-you is built by present-you. Don't leave him hanging.
 
 I help men 30+ get lean, strong, and confident without living in the gym.
 
-Follow @hackingmenshealth and comment **"PLAN"** — I'll send you where to start.
+Follow @gaberochafit and comment **"PLAN"** — I'll send you where to start.
 
 (For the busy guy who's ready to stop starting over.)
