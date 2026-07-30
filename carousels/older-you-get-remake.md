@@ -1,210 +1,118 @@
 # Carousel Remake — "The older you get" (Hacking Men's Health)
 
-**Original:** Dan Go (@CoachDanGo), 16-slide carousel
-**Rewritten for:** Hacking Men's Health — men 30+ (skinny-fat, busy, beginner-to-intermediate, want to look good, feel strong, and stay sharp)
+**Original inspiration:** Dan Go (@CoachDanGo), 16-slide carousel
+**Rewritten for:** Hacking Men's Health — men 30+ (busy, beginner-to-intermediate, want to look good, feel strong, stay sharp)
 **Voice:** Punchy, direct, brotherly tough-love. No fluff.
+**Template:** Gabe's tweet/X-style brand slide — glasses PFP (`assets/gabe-pfp.png`), name + blue verified check, grey @handle, big bold headline, blue follow line, blue progress bar + `n/18`, footer handle.
+**Handle:** @gabexrocha · **Keyword:** HACK
 
-> Note: Slides 11–15 were not in the uploads. Slides 11 & 12 cover the two remaining habits from the slide-1 list (friends/family, pointless hobbies); 13–15 are bridge/summary slides written to flow into the CTA. Swap freely.
+> All copy is original — nothing is lifted word-for-word from the reference.
+> Slides 11–15 were not in the source uploads (reconstructed). Slides 16 & 17 are
+> the two client transformations added as proof slides before the CTA.
 
 ---
 
 ## Slide 1 — Hook + list
+**Headline:** Nobody warns you about your 30s.
 
-**Nobody warns you about this in your 30s:**
+The stuff you got away with at 22 starts sending you a bill. After 30 these stop being optional:
 
-The older you get, the less your body forgives you.
-
-The stuff you got away with at 22 starts sending you a bill.
-
-So if you're 30+, these become non-negotiable:
-
-- Get lean (and stay lean)
+- Get lean and stay lean
 - Lift heavy things
-- Walk every single day
+- Walk every day
 - Pull back on the booze
 - Get outside
 - Keep learning
 - Build your engine (Zone 2)
-- Get morning sun
+- Catch morning sun
 - Guard your friendships
-- Keep one pointless hobby
+- Keep one useless hobby
 
-Here's why each one matters 👇
+Let's break down why 👇
 
----
+## Slide 2
+**Headline:** Getting older isn't the problem.
 
-## Slide 2 — Framing
-
-Most men think getting older means slowing down.
-
-It doesn't.
-
-It means the cost of neglecting your body finally comes due.
-
-The habits you could skip at 22 are the ones that decide how you look, move, and feel at 45.
-
-You don't rise to your goals. You fall to your habits.
-
----
+Slowing down isn't a law of aging. It's the interest you pay on years of neglect. What you shrug off at 22 is exactly what decides how you look, move, and feel at 45. You don't rise to your goals. You sink to your habits.
 
 ## Slide 3 — Get lean
+**Headline:** Belly fat isn't a looks problem.
 
-Getting lean was never about the mirror.
+The fat you can't see — packed around your organs — is the one that quietly drives up your risk of heart disease, diabetes, and brain decline. Stay lean and you buy yourself margin. After 30, margin is the whole game.
 
-The fat you can't see — the stuff wrapped around your organs — is the dangerous kind. It quietly raises your risk of heart disease, diabetes, and early cognitive decline.
+## Slide 4 — Lift
+**Headline:** Muscle is your retirement account.
 
-The leaner you stay, the more margin for error you get.
+Coast after 30 and you'll shed close to 1% of your muscle a year without noticing. Muscle keeps you strong, keeps you lean, and guards your joints when life gets literally heavy. Build it now — you'll be spending it for decades.
 
-And after 30, margin is everything.
+## Slide 5 — Walk
+**Headline:** Walking is the drug nobody prescribes.
 
----
+A daily 30-minute walk can cut your risk of an early death by up to a third. It clears your head, drains your stress, loosens your joints, and chips away at body fat. No gym. No gear. No excuse.
 
-## Slide 4 — Lift heavy things
+## Slide 6 — Alcohol
+**Headline:** Booze taxes you harder now.
 
-Lifting is the closest thing we have to a fountain of youth.
+Same drinks, bigger bill: wrecked sleep, jacked-up cortisol, faster aging. I'm not telling you to go dry. I'm telling you the older you get, the more it costs — and the less that buzz is worth.
 
-Do nothing after 30 and you'll bleed roughly 1% of your muscle every year.
+## Slide 7 — Nature
+**Headline:** Nature is a free nervous-system reset.
 
-Muscle is what keeps you strong, keeps you lean, and protects your joints when life gets heavy — literally.
+Time outside lowers your stress hormones, drops your blood pressure, and lifts your mood at no cost. You were wired for sunlight and open space — not group chats and blue light. Get more sky in your day.
 
-Use it or lose it. There's no third option.
+## Slide 8 — Learning
+**Headline:** A bored brain ages fast.
 
----
+Every skill you pick up lays down fresh wiring and keeps your mind quick. The guys who stay curious hold off cognitive decline far longer than the ones who coast. Your brain's a muscle too. Load it.
 
-## Slide 5 — Walk every day
+## Slide 9 — Zone 2
+**Headline:** Zone 2 is boring on purpose.
 
-Walking is the most slept-on tool you have.
+Easy, conversational cardio is one of the highest-leverage things you can do for a long, strong life. It grows your aerobic base, lifts your VO2 max, and teaches your body to squeeze more energy from the same fuel. 120–180 easy minutes a week. That's it.
 
-A 30-minute daily walk lowers your risk of early death by up to 35%.
+## Slide 10 — Morning sun
+**Headline:** Your morning light sets the whole day.
 
-It clears your head. It drops your stress. It keeps your joints moving and your body fat down.
+Sun in your eyes early anchors your body clock, lifts your mood, and cues the hormones that let you actually sleep that night. 10–20 minutes outside soon after waking pays off in energy, focus, and recovery. Cheapest upgrade you own.
 
-No gym. No equipment. No excuse.
+## Slide 11 — Friends & family *(reconstructed)*
+**Headline:** You can't out-train loneliness.
 
----
+Isolation ages you faster than any bad meal. Strong relationships are one of the best predictors of how long — and how well — you live. But friendships don't run on autopilot. Send the text. Make the plan. Be the one who reaches out first.
 
-## Slide 6 — Pull back on the booze
+## Slide 12 — Hobbies *(reconstructed)*
+**Headline:** Keep one totally useless hobby.
 
-Alcohol hits different after 30.
+Have something you do purely because it's fun — not to monetize, optimize, or post. Play buffers you against burnout and reminds you you're more than your job. The "pointless" hobby might be the most useful hour of your week.
 
-It torches your sleep, spikes your cortisol, and ages you from the inside out.
+## Slide 13 — Bridge *(reconstructed)*
+**Headline:** Simple always beats complicated.
 
-I'm not telling you to quit.
+None of this is advanced. That's the point — it's not hard, it's just repeated. One walk won't move the needle. A year of walks rebuilds you. Small inputs, stacked daily, compounded for decades.
 
-I'm telling you the older you get, the more you feel the hangover — and the less that buzz is actually worth.
+## Slide 14 — The real cost *(reconstructed)*
+**Headline:** Nobody falls apart overnight.
 
----
+You don't wake up soft, tired, and stuck one morning. You drift there — a skipped workout, a late night, one "I'll start Monday" at a time. Good news: the drift runs both directions.
 
-## Slide 7 — Get outside
+## Slide 15 — The turn *(reconstructed)*
+**Headline:** You're not behind. You're right on time.
 
-Nature isn't a luxury. It's medicine.
+The best day to start these was ten years ago. The next best is today. Pick one. Run it this week. Let the rest follow. Present-you is building future-you. Don't leave him stranded.
 
-Time outside lowers your stress hormones, drops your blood pressure, and lifts your mood — for free.
+## Slide 16 — Proof #1 (`assets/before-after/transformation-1.png`)
+**Headline:** This is what dialed-in actually looks like.
 
-Your nervous system was built for sunlight and open space, not group chats and blue light.
+Same guy. Same busy life. He just ran the boring stuff on repeat — and stopped hiding under the shirt.
 
-Trade the screen for the sky more often.
+## Slide 17 — Proof #2 (`assets/before-after/transformation-2.png`)
+**Headline:** Same playbook. Different man.
 
----
+No crash diet. No living in the gym. Just the habits above, held long enough to compound.
 
-## Slide 8 — Keep learning
+## Slide 18 — CTA
+**Headline:** Tired shouldn't be your default setting.
 
-A curious brain is a young brain.
+Comment **"HACK"** and my team will help you get your energy and body dialed in — 1-on-1.
 
-Every new skill you pick up wires new pathways and keeps your mind sharp.
-
-The men who keep learning have a far lower risk of cognitive decline down the road.
-
-Your brain is a muscle too. Train it like one.
-
----
-
-## Slide 9 — Build your engine (Zone 2)
-
-Zone 2 cardio is boring. It's also one of the most powerful things you can do for a long, strong life.
-
-It builds your aerobic base, raises your VO2 max, and teaches your body to make more energy from the same fuel.
-
-120–180 easy minutes a week. That's the whole prescription.
-
----
-
-## Slide 10 — Get morning sun
-
-Morning sun isn't a nice-to-have.
-
-It sets your body clock, boosts your mood, and dials in the hormones that let you actually sleep at night.
-
-10–20 minutes outside within an hour of waking changes everything downstream — your energy, your focus, your recovery.
-
-Cheapest upgrade you'll ever make.
-
----
-
-## Slide 11 — Guard your friendships
-
-Loneliness ages you faster than a bad diet.
-
-Strong relationships are one of the biggest predictors of how long — and how well — you live.
-
-But friendships don't survive on autopilot. They need effort, a text back, a calendar invite.
-
-Make the plans. Show up. Be the guy who reaches out first.
-
----
-
-## Slide 12 — Keep one pointless hobby
-
-Have at least one thing you do purely because it's fun.
-
-Not to monetize. Not to optimize. Not to post.
-
-Play protects you from burnout, lowers stress, and reminds you you're more than your job.
-
-The hobby that "makes no sense" might be the most useful thing you do all week.
-
----
-
-## Slide 13 — Bridge
-
-None of this is complicated.
-
-That's the point. It's not hard — it's just repeated.
-
-One walk won't change your body. A year of walks will change your life.
-
-Small inputs. Stacked daily. Compounded over decades.
-
----
-
-## Slide 14 — The real cost
-
-Here's what nobody tells you:
-
-You don't wake up out of shape, tired, and soft one day.
-
-You drift there — one skipped workout, one late night, one "I'll start Monday" at a time.
-
-The good news? You can drift the other way just as easily.
-
----
-
-## Slide 15 — The turn
-
-You're not too late. You're right on time.
-
-The best day to build these habits was 10 years ago. The second best is today.
-
-Pick one. Start this week. Let the rest follow.
-
-Future-you is built by present-you. Don't leave him hanging.
-
----
-
-## Slide 16 — CTA
-
-I'm taking on 5 new clients to work directly with my team.
-
-Follow me and comment **"HACK"** and I'll see if we're a good fit 🤝
-
-(You must be a man 30+ ready to get in the best shape of your life)
+*(blue)* Follow @gabexrocha for more men's health hacks.
