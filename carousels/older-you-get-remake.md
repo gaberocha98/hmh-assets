@@ -111,8 +111,9 @@ Same guy. Same busy life. He just ran the boring stuff on repeat — and stopped
 No crash diet. No living in the gym. Just the habits above, held long enough to compound.
 
 ## Slide 18 — CTA
-**Headline:** Tired shouldn't be your default setting.
 
-Comment **"HACK"** and my team will help you get your energy and body dialed in — 1-on-1.
+I'm taking on a handful of new guys to work directly with me and my team.
 
-*(blue)* Follow @gabexrocha for more men's health hacks.
+Follow @gabexrocha and comment **"HACK"** — I'll see if we're a good fit 🤝
+
+(You've gotta be a dude who's ready to take accountability, not chase a quick fix.)
