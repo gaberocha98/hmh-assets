@@ -203,8 +203,8 @@ Future-you is built by present-you. Don't leave him hanging.
 
 ## Slide 16 — CTA
 
-I help men 30+ get lean, strong, and confident without living in the gym.
+I'm taking on 5 new clients to work directly with my team.
 
-Follow @gaberochafit and comment **"PLAN"** — I'll send you where to start.
+Follow me and comment **"HACK"** and I'll see if we're a good fit 🤝
 
-(For the busy guy who's ready to stop starting over.)
+(You must be a man 30+ ready to get in the best shape of your life)
