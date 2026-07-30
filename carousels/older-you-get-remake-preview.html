@@ -1,9 +1,6 @@
 <title>HMH Carousel Preview — The older you get</title>
 <style>
-  :root {
-    --ground:#e6e7ea; --card:#fff; --ink:#0a0a0b; --muted:#6b7480;
-    --blue:#1d9bf0; --track:#e7e9ec; --edge:rgba(0,0,0,.08); --title-ink:#14151a; --accent:#d94a2b;
-  }
+  :root{ --ground:#e6e7ea; --card:#fff; --ink:#0a0a0b; --muted:#6b7480; --blue:#1d9bf0; --edge:rgba(0,0,0,.08); --title-ink:#14151a; --accent:#d94a2b; }
   @media (prefers-color-scheme: dark){ :root{ --ground:#0c0d10; --edge:rgba(255,255,255,.08); --title-ink:#f2f3f5; } }
   :root[data-theme="dark"]{ --ground:#0c0d10; --edge:rgba(255,255,255,.08); --title-ink:#f2f3f5; }
   :root[data-theme="light"]{ --ground:#e6e7ea; --edge:rgba(0,0,0,.08); --title-ink:#14151a; }
@@ -11,55 +8,54 @@
   body{ margin:0; background:var(--ground); color:var(--title-ink);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     -webkit-font-smoothing:antialiased; padding:32px 20px 80px; }
-  header.page{ max-width:1160px; margin:0 auto 26px; display:flex; flex-direction:column; gap:6px; }
+  header.page{ max-width:1180px; margin:0 auto 26px; display:flex; flex-direction:column; gap:6px; }
   header.page .eyebrow{ font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-weight:700; }
   header.page h1{ margin:0; font-size:clamp(22px,3vw,30px); letter-spacing:-.02em; text-wrap:balance; }
-  header.page p{ margin:2px 0 0; color:var(--muted); font-size:14px; max-width:64ch; line-height:1.5; }
-  .grid{ max-width:1160px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:22px; }
+  header.page p{ margin:2px 0 0; color:var(--muted); font-size:14px; max-width:66ch; line-height:1.5; }
+  .grid{ max-width:1180px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fill,minmax(360px,1fr)); gap:26px; align-items:start; }
 
-  .slide{ position:relative; background:var(--card); color:var(--ink); border-radius:16px;
-    aspect-ratio:4/5; padding:34px 34px 30px; display:flex; flex-direction:column; overflow:hidden;
-    border:1px solid var(--edge); box-shadow:0 8px 26px rgba(0,0,0,.10); }
-  .author{ display:flex; align-items:center; gap:12px; margin-bottom:22px; flex:0 0 auto; }
-  .avatar{ width:54px; height:54px; border-radius:50%; background-image:var(--pfp); background-size:cover; background-position:center; flex:0 0 auto; }
-  .who{ display:flex; flex-direction:column; line-height:1.15; }
-  .name{ display:flex; align-items:center; gap:5px; font-weight:800; font-size:19px; letter-spacing:-.01em; }
-  .check{ width:17px; height:17px; flex:0 0 auto; }
-  .handle{ color:var(--muted); font-size:15px; }
+  .cell{ display:flex; flex-direction:column; gap:9px; }
+  .label{ font-size:12px; color:var(--muted); font-weight:700; letter-spacing:.03em; padding-left:2px; }
+  .label .rt{ color:var(--accent); }
 
-  .content{ flex:1 1 auto; display:flex; flex-direction:column; gap:16px; min-height:0; }
-  .headline{ font-weight:800; font-size:clamp(23px,2.7vw,33px); line-height:1.08; letter-spacing:-.022em; text-wrap:balance; }
-  .slide.compact .headline{ font-size:clamp(20px,2.2vw,26px); }
-  .say{ font-weight:700; font-size:clamp(15px,1.55vw,19px); line-height:1.32; }
-  .say p{ margin:0 0 9px; }
-  .say p:last-child{ margin-bottom:0; }
-  .say ul{ margin:6px 0; padding-left:20px; display:flex; flex-direction:column; gap:5px; font-weight:700; }
-  .follow{ color:var(--blue); font-weight:800; font-size:clamp(15px,1.6vw,19px); line-height:1.3; }
+  /* The slide face — proportions in cqw so type matches Dan Go's reference at any card size */
+  .slide{ container-type:inline-size; position:relative; background:var(--card); color:var(--ink);
+    border-radius:14px; aspect-ratio:4/5; padding:7cqw; display:flex; flex-direction:column;
+    border:1px solid var(--edge); box-shadow:0 8px 26px rgba(0,0,0,.10); overflow:hidden; }
+  .slide.grow{ aspect-ratio:auto; }
+
+  .author{ display:flex; align-items:center; gap:3.2cqw; margin-bottom:5.4cqw; flex:0 0 auto; }
+  .avatar{ width:11cqw; height:11cqw; border-radius:50%; background-image:var(--pfp); background-size:cover; background-position:center; flex:0 0 auto; }
+  .who{ display:flex; flex-direction:column; line-height:1.12; }
+  .name{ display:flex; align-items:center; gap:1.2cqw; font-weight:800; font-size:4cqw; letter-spacing:-.01em; }
+  .check{ width:3.6cqw; height:3.6cqw; flex:0 0 auto; }
+  .handle{ color:var(--muted); font-size:3.35cqw; }
+
+  /* Dan Go body: uniform regular weight, one size, generous leading */
+  .text{ font-size:4cqw; line-height:1.4; font-weight:400; letter-spacing:-.015em; color:var(--ink); }
+  .text p{ margin:0 0 3cqw; }
+  .text p:last-child{ margin-bottom:0; }
+  .text ul{ margin:2.6cqw 0; padding-left:5.2cqw; list-style:disc; }
+  .text li{ margin:0 0 1.7cqw; padding-left:.6cqw; }
+
+  .proofcap{ margin-bottom:4.4cqw; }
   .proofwrap{ flex:1 1 auto; min-height:0; display:flex; }
-  .proofwrap img{ width:100%; height:100%; object-fit:cover; border-radius:12px; border:1px solid var(--edge); }
+  .proofwrap img{ width:100%; height:100%; object-fit:cover; border-radius:2.6cqw; border:1px solid var(--edge); }
 
-  .foot{ flex:0 0 auto; margin-top:18px; }
-  .bar{ display:flex; align-items:center; gap:14px; }
-  .track{ flex:1 1 auto; height:6px; background:var(--track); border-radius:99px; overflow:hidden; }
-  .fill{ height:100%; background:var(--blue); border-radius:99px; }
-  .count{ font-weight:800; color:var(--muted); font-size:15px; font-variant-numeric:tabular-nums; }
-  .foothandle{ margin-top:12px; color:var(--muted); font-size:14px; }
-
-  .recon-tag{ position:absolute; top:12px; right:12px; background:rgba(20,20,22,.55); color:#fff; font-size:11px; font-weight:600; padding:3px 9px; border-radius:99px; }
-  footer.page{ max-width:1160px; margin:40px auto 0; color:var(--muted); font-size:12.5px; line-height:1.6; border-top:1px solid var(--edge); padding-top:16px; }
+  footer.page{ max-width:1180px; margin:40px auto 0; color:var(--muted); font-size:12.5px; line-height:1.6; border-top:1px solid var(--edge); padding-top:16px; }
   code{ font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.92em; }
 </style>
 
 <header class="page">
   <div class="eyebrow">Hacking Men's Health · Carousel Preview</div>
   <h1>The older you get, the less your body forgives you</h1>
-  <p>Rebuilt in your real brand template — tweet-style header, blue accents, progress bar, footer handle — with your glasses PFP and the two client transformations as proof slides. Copy is original (nothing lifted word-for-word).</p>
+  <p>Dan Go font treatment — one clean regular-weight size, no bottom progress bar. Your glasses PFP, name + blue check, @handle, then the text. Slide order is labelled above each card (it never appears on the slide itself). Copy is original.</p>
 </header>
 
 <main class="grid" id="grid"></main>
 
 <footer class="page">
-  Preview only. PFP: <code>assets/gabe-pfp.png</code> · transformations: <code>assets/before-after/</code> · copy: <code>carousels/older-you-get-remake.md</code>. Handle shown: @gabexrocha · keyword: “HACK”.
+  Preview only. PFP: <code>assets/gabe-pfp.png</code> · transformations: <code>assets/before-after/</code> · copy: <code>carousels/older-you-get-remake.md</code>. Handle: @gabexrocha · keyword “HACK”.
 </footer>
 
 <script>
@@ -71,7 +67,8 @@
   const CHECK = '<svg class="check" viewBox="0 0 24 24" aria-hidden="true"><path fill="#1d9bf0" d="M12 2l2.4 1.8 3 .1 1 2.8 2.4 1.7-.9 2.9.9 2.9-2.4 1.7-1 2.8-3 .1L12 22l-2.4-1.8-3-.1-1-2.8L3.2 15.6l.9-2.9-.9-2.9 2.4-1.7 1-2.8 3-.1z"/><path fill="#fff" d="M10.6 14.6l-2.2-2.2-1.3 1.3 3.5 3.5 6-6-1.3-1.3z"/></svg>';
 
   const slides = [
-    { compact:true, headline:"Nobody warns you about your 30s.", say:`
+    { text:`
+      <p>Nobody warns you about your 30s.</p>
       <p>The stuff you got away with at 22 starts sending you a bill. After 30 these stop being optional:</p>
       <ul>
         <li>Get lean and stay lean</li>
@@ -86,100 +83,107 @@
         <li>Keep one useless hobby</li>
       </ul>
       <p>Let's break down why 👇</p>` },
-    { headline:"Getting older isn't the problem.", say:`
+    { text:`
+      <p>Getting older isn't the problem.</p>
       <p>Slowing down isn't a law of aging. It's the interest you pay on years of neglect.</p>
       <p>What you shrug off at 22 is exactly what decides how you look, move, and feel at 45.</p>
       <p>You don't rise to your goals. You sink to your habits.</p>` },
-    { headline:"Belly fat isn't a looks problem.", say:`
+    { text:`
+      <p>Belly fat isn't a looks problem.</p>
       <p>The fat you can't see — packed around your organs — is the one that quietly drives up your risk of heart disease, diabetes, and brain decline.</p>
       <p>Stay lean and you buy yourself margin. After 30, margin is the whole game.</p>` },
-    { headline:"Muscle is your retirement account.", say:`
+    { text:`
+      <p>Muscle is your retirement account.</p>
       <p>Coast after 30 and you'll shed close to 1% of your muscle a year without noticing.</p>
-      <p>Muscle keeps you strong, keeps you lean, and guards your joints when life gets literally heavy.</p>
+      <p>It keeps you strong, keeps you lean, and guards your joints when life gets literally heavy.</p>
       <p>Build it now. You'll be spending it for decades.</p>` },
-    { headline:"Walking is the drug nobody prescribes.", say:`
+    { text:`
+      <p>Walking is the drug nobody prescribes.</p>
       <p>A daily 30-minute walk can cut your risk of an early death by up to a third.</p>
       <p>It clears your head, drains your stress, loosens your joints, and chips away at body fat.</p>
       <p>No gym. No gear. No excuse.</p>` },
-    { headline:"Booze taxes you harder now.", say:`
+    { text:`
+      <p>Booze taxes you harder now.</p>
       <p>Same drinks, bigger bill: wrecked sleep, jacked-up cortisol, faster aging.</p>
       <p>I'm not telling you to go dry.</p>
-      <p>I'm telling you that the older you get, the more it costs — and the less that buzz is worth.</p>` },
-    { headline:"Nature is a free nervous-system reset.", say:`
+      <p>I'm telling you the older you get, the more it costs — and the less that buzz is worth.</p>` },
+    { text:`
+      <p>Nature is a free nervous-system reset.</p>
       <p>Time outside lowers your stress hormones, drops your blood pressure, and lifts your mood at no cost.</p>
       <p>You were wired for sunlight and open space — not group chats and blue light.</p>
       <p>Get more sky in your day.</p>` },
-    { headline:"A bored brain ages fast.", say:`
+    { text:`
+      <p>A bored brain ages fast.</p>
       <p>Every skill you pick up lays down fresh wiring and keeps your mind quick.</p>
       <p>The guys who stay curious hold off cognitive decline far longer than the ones who coast.</p>
       <p>Your brain's a muscle too. Load it.</p>` },
-    { headline:"Zone 2 is boring on purpose.", say:`
+    { text:`
+      <p>Zone 2 is boring on purpose.</p>
       <p>Easy, conversational cardio is one of the highest-leverage things you can do for a long, strong life.</p>
       <p>It grows your aerobic base, lifts your VO2 max, and teaches your body to squeeze more energy from the same fuel.</p>
       <p>120–180 easy minutes a week. That's it.</p>` },
-    { headline:"Your morning light sets the whole day.", say:`
+    { text:`
+      <p>Your morning light sets the whole day.</p>
       <p>Sun in your eyes early anchors your body clock, lifts your mood, and cues the hormones that let you actually sleep that night.</p>
       <p>10–20 minutes outside soon after waking pays off in energy, focus, and recovery.</p>
       <p>Cheapest upgrade you own.</p>` },
-    { recon:true, headline:"You can't out-train loneliness.", say:`
+    { recon:true, text:`
+      <p>You can't out-train loneliness.</p>
       <p>Isolation ages you faster than any bad meal. Strong relationships are one of the best predictors of how long — and how well — you live.</p>
-      <p>But friendships don't run on autopilot. Send the text. Make the plan. Be the one who reaches out first.</p>` },
-    { recon:true, headline:"Keep one totally useless hobby.", say:`
+      <p>Friendships don't run on autopilot. Send the text. Make the plan. Be the one who reaches out first.</p>` },
+    { recon:true, text:`
+      <p>Keep one totally useless hobby.</p>
       <p>Have something you do purely because it's fun — not to monetize, optimize, or post.</p>
       <p>Play buffers you against burnout and reminds you you're more than your job.</p>
       <p>The "pointless" hobby might be the most useful hour of your week.</p>` },
-    { recon:true, headline:"Simple always beats complicated.", say:`
+    { recon:true, text:`
+      <p>Simple always beats complicated.</p>
       <p>None of this is advanced. That's the point — it's not hard, it's just repeated.</p>
       <p>One walk won't move the needle. A year of walks rebuilds you.</p>
       <p>Small inputs, stacked daily, compounded for decades.</p>` },
-    { recon:true, headline:"Nobody falls apart overnight.", say:`
+    { recon:true, text:`
+      <p>Nobody falls apart overnight.</p>
       <p>You don't wake up soft, tired, and stuck one morning.</p>
       <p>You drift there — a skipped workout, a late night, one "I'll start Monday" at a time.</p>
       <p>Good news: the drift runs both directions.</p>` },
-    { recon:true, headline:"You're not behind. You're right on time.", say:`
+    { recon:true, text:`
+      <p>You're not behind. You're right on time.</p>
       <p>The best day to start these was ten years ago. The next best is today.</p>
       <p>Pick one. Run it this week. Let the rest follow.</p>
       <p>Present-you is building future-you. Don't leave him stranded.</p>` },
-    { proof:BA1, headline:"This is what dialed-in actually looks like.", say:`
-      <p>Same guy. Same busy life. He just ran the boring stuff on repeat — and stopped hiding under the shirt.</p>` },
-    { proof:BA2, headline:"Same playbook. Different man.", say:`
+    { proof:BA1, cap:`
+      <p>This is what dialed-in actually looks like.</p>
+      <p>Same guy. Same busy life. He just ran the boring stuff on repeat.</p>` },
+    { proof:BA2, cap:`
+      <p>Same playbook. Different man.</p>
       <p>No crash diet. No living in the gym. Just the habits above, held long enough to compound.</p>` },
-    { cta:true, headline:"Tired shouldn't be your default setting.", say:`
-      <p>Comment <strong>"HACK"</strong> and my team will help you get your energy and body dialed in — 1-on-1.</p>`,
-      follow:`Follow @gabexrocha for more men's health hacks.` },
+    { text:`
+      <p>Tired shouldn't be your default setting.</p>
+      <p>Comment "HACK" and my team will help you get your energy and body dialed in — 1-on-1.</p>
+      <p>Follow @gabexrocha for more men's health hacks.</p>` },
   ];
 
   const total = slides.length;
   const grid = document.getElementById('grid');
   grid.innerHTML = slides.map((s,i) => {
-    const n = i+1;
-    const pct = Math.round(n/total*100);
-    const middle = s.proof
-      ? `<div class="proofwrap"><img src="${s.proof}" alt="Client before and after transformation"></div>`
-      : (s.say || '');
+    const n = String(i+1).padStart(2,'0');
+    const tag = s.recon ? ' · <span class="rt">reconstructed</span>' : (s.proof ? ' · proof' : '');
+    const face = s.proof
+      ? `<div class="text proofcap">${s.cap}</div><div class="proofwrap"><img src="${s.proof}" alt="Client before and after transformation"></div>`
+      : `<div class="text">${s.text}</div>`;
     return `
-      <article class="slide${s.compact?' compact':''}">
-        ${s.recon?'<span class="recon-tag">reconstructed</span>':''}
-        <div class="author">
-          <div class="avatar" role="img" aria-label="Gabe Rocha"></div>
-          <div class="who">
-            <span class="name">Gabe Rocha ${CHECK}</span>
-            <span class="handle">${HANDLE}</span>
+      <div class="cell">
+        <div class="label">${n} / ${total}${tag}</div>
+        <article class="slide${s.proof?'':' grow'}">
+          <div class="author">
+            <div class="avatar" role="img" aria-label="Gabe Rocha"></div>
+            <div class="who">
+              <span class="name">Gabe Rocha ${CHECK}</span>
+              <span class="handle">${HANDLE}</span>
+            </div>
           </div>
-        </div>
-        <div class="content">
-          <div class="headline">${s.headline}</div>
-          ${s.proof?middle:`<div class="say">${s.say}</div>`}
-          ${s.proof?'':''}
-          ${s.follow?`<div class="follow">${s.follow}</div>`:''}
-        </div>
-        <div class="foot">
-          <div class="bar">
-            <div class="track"><div class="fill" style="width:${pct}%"></div></div>
-            <div class="count">${n}/${total}</div>
-          </div>
-          <div class="foothandle">${HANDLE}</div>
-        </div>
-      </article>`;
+          ${face}
+        </article>
+      </div>`;
   }).join('');
 </script>
