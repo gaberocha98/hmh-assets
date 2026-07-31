@@ -19,10 +19,10 @@
   .label .rt{ color:var(--accent); }
 
   /* The slide face — proportions in cqw so type matches Dan Go's reference at any card size */
+  /* Every slide is the SAME fixed size (4:5, like a posted carousel). Text auto-fits; nothing grows or clips. */
   .slide{ container-type:inline-size; position:relative; background:var(--card); color:var(--ink);
     border-radius:14px; aspect-ratio:4/5; padding:7cqw; display:flex; flex-direction:column;
     border:1px solid var(--edge); box-shadow:0 8px 26px rgba(0,0,0,.10); overflow:hidden; }
-  .slide.grow{ aspect-ratio:auto; }
 
   .author{ display:flex; align-items:center; gap:3.2cqw; margin-bottom:5.4cqw; flex:0 0 auto; }
   .avatar{ width:11cqw; height:11cqw; border-radius:50%; background-image:var(--pfp); background-size:cover; background-position:center; flex:0 0 auto; }
@@ -158,7 +158,7 @@
       <p>Same playbook. Different man.</p>
       <p>No crash diet. No living in the gym. Just the habits above, held long enough to compound.</p>` },
     { text:`
-      <p>I'm taking on a handful of new guys to work directly with me and my team.</p>
+      <p>I'm taking on 3 new guys to work directly with me and my team.</p>
       <p>Follow @gabexrocha and comment "HACK" — I'll see if we're a good fit 🤝</p>
       <p>(You've gotta be a dude who's ready to take accountability, not chase a quick fix.)</p>` },
   ];
@@ -174,7 +174,7 @@
     return `
       <div class="cell">
         <div class="label">${n} / ${total}${tag}</div>
-        <article class="slide${s.proof?'':' grow'}">
+        <article class="slide">
           <div class="author">
             <div class="avatar" role="img" aria-label="Gabe Rocha"></div>
             <div class="who">
@@ -186,4 +186,25 @@
         </article>
       </div>`;
   }).join('');
+
+  // Keep every card the exact same size: shrink a slide's body text until it fits (never grow the card).
+  function fitSlides(){
+    document.querySelectorAll('.slide').forEach(slide => {
+      const body = slide.querySelector('.text:not(.proofcap)');
+      if(!body) return;                       // proof slides fit via the image
+      const w = slide.clientWidth || 360;
+      const max = w * 0.04, min = w * 0.028;  // 4cqw down to ~2.8cqw
+      let fs = max;
+      body.style.fontSize = fs + 'px';
+      let guard = 0;
+      while(slide.scrollHeight > slide.clientHeight + 0.5 && fs > min && guard < 80){
+        fs -= 0.4; body.style.fontSize = fs + 'px'; guard++;
+      }
+    });
+  }
+  let rz;
+  const run = () => { clearTimeout(rz); rz = setTimeout(fitSlides, 60); };
+  window.addEventListener('load', fitSlides);
+  window.addEventListener('resize', run);
+  fitSlides();
 </script>

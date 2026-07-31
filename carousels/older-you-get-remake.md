@@ -112,7 +112,7 @@ No crash diet. No living in the gym. Just the habits above, held long enough to 
 
 ## Slide 18 — CTA
 
-I'm taking on a handful of new guys to work directly with me and my team.
+I'm taking on 3 new guys to work directly with me and my team.
 
 Follow @gabexrocha and comment **"HACK"** — I'll see if we're a good fit 🤝
 
