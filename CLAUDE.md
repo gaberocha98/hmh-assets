@@ -28,6 +28,9 @@ Static assets + content for **Hacking Men's Health** (Gabe Rocha).
   "Follow @gabexrocha and comment 'HACK' — I'll see if we're a good fit 🤝" →
   a qualifier line in parentheses. Keep the keyword **HACK**.
 - **Never copy the reference word-for-word** — always rewrite in Gabe's voice.
+- **No dashes in the copy.** Gabe doesn't speak with dashes. Never use em or en
+  dashes (— –) in slide text. Rewrite with a comma, a period, or a word like "to"
+  for ranges (e.g. "120 to 180 minutes"). Normal hyphens in compound words are fine.
 - Before/after transformation photos live in `assets/before-after/` and are
   dropped in as full-bleed proof slides before the CTA.
 

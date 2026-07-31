@@ -37,6 +37,9 @@ no fluff.** Template is modeled on Dan Go (@CoachDanGo) tweet-style slides.
 8. **Before/after proof:** images in `assets/before-after/` go in as full-bleed
    proof slides (caption + image) before the CTA.
 9. **Never copy the source carousel word-for-word.** Always rewrite in Gabe's voice.
+9b. **No dashes.** Gabe doesn't speak with dashes. Never put em or en dashes (— –)
+    in slide copy; use a comma, a period, or "to" for ranges. Plain hyphens in
+    compound words (e.g. "1-on-1", "dialed-in") are fine.
 10. If asked to reconstruct slides that weren't supplied, label them clearly in the
     preview (`reconstructed`) so Gabe can tell them apart.
 
