@@ -22,18 +22,19 @@
   /* Every slide is the SAME fixed size (4:5, like a posted carousel). Text auto-fits; nothing grows or clips. */
   .slide{ container-type:inline-size; position:relative; background:var(--card); color:var(--ink);
     border-radius:14px; aspect-ratio:4/5; padding:7cqw; display:flex; flex-direction:column;
+    justify-content:center; /* Dan Go: photo+name+text block sits vertically centered */
     border:1px solid var(--edge); box-shadow:0 8px 26px rgba(0,0,0,.10); overflow:hidden; }
 
-  .author{ display:flex; align-items:center; gap:3.2cqw; margin-bottom:5.4cqw; flex:0 0 auto; }
-  .avatar{ width:11cqw; height:11cqw; border-radius:50%; background-image:var(--pfp); background-size:cover; background-position:center; flex:0 0 auto; }
+  .author{ display:flex; align-items:center; gap:3.4cqw; margin-bottom:5cqw; flex:0 0 auto; }
+  .avatar{ width:13cqw; height:13cqw; border-radius:50%; background-image:var(--pfp); background-size:cover; background-position:center; flex:0 0 auto; }
   .who{ display:flex; flex-direction:column; line-height:1.12; }
-  .name{ display:flex; align-items:center; gap:1.2cqw; font-weight:800; font-size:4cqw; letter-spacing:-.01em; }
-  .check{ width:3.6cqw; height:3.6cqw; flex:0 0 auto; }
-  .handle{ color:var(--muted); font-size:3.35cqw; }
+  .name{ display:flex; align-items:center; gap:1.3cqw; font-weight:800; font-size:4.6cqw; letter-spacing:-.01em; }
+  .check{ width:4.1cqw; height:4.1cqw; flex:0 0 auto; }
+  .handle{ color:var(--muted); font-size:3.9cqw; }
 
   /* Dan Go body: uniform regular weight, one size, generous leading */
-  .text{ font-size:4cqw; line-height:1.4; font-weight:400; letter-spacing:-.015em; color:var(--ink); }
-  .text p{ margin:0 0 3cqw; }
+  .text{ font-size:4.8cqw; line-height:1.38; font-weight:400; letter-spacing:-.015em; color:var(--ink); }
+  .text p{ margin:0 0 3.4cqw; }
   .text p:last-child{ margin-bottom:0; }
   .text ul{ margin:2.6cqw 0; padding-left:5.2cqw; list-style:disc; }
   .text li{ margin:0 0 1.7cqw; padding-left:.6cqw; }
@@ -49,7 +50,7 @@
 <header class="page">
   <div class="eyebrow">Hacking Men's Health · Carousel Preview</div>
   <h1>The older you get, the less your body forgives you</h1>
-  <p>Dan Go font treatment — one clean regular-weight size, no bottom progress bar. Your glasses PFP, name + blue check, @handle, then the text. Slide order is labelled above each card (it never appears on the slide itself). Copy is original.</p>
+  <p>Dan Go treatment: the photo + name + text block is vertically centered on every slide (balanced whitespace top and bottom), photo and type sized to match his, uniform 4:5 cards. Slide order is labelled above each card (never on the slide). Copy is original.</p>
 </header>
 
 <main class="grid" id="grid"></main>
@@ -193,13 +194,15 @@
       const body = slide.querySelector('.text:not(.proofcap)');
       if(!body) return;                       // proof slides fit via the image
       const w = slide.clientWidth || 360;
-      const max = w * 0.04, min = w * 0.028;  // 4cqw down to ~2.8cqw
+      const max = w * 0.048, min = w * 0.03;  // Dan Go size (~4.8cqw), shrink only if needed
+      slide.style.justifyContent = 'flex-start';   // measure from the top so overflow is detectable
       let fs = max;
       body.style.fontSize = fs + 'px';
       let guard = 0;
-      while(slide.scrollHeight > slide.clientHeight + 0.5 && fs > min && guard < 80){
+      while(slide.scrollHeight > slide.clientHeight + 0.5 && fs > min && guard < 90){
         fs -= 0.4; body.style.fontSize = fs + 'px'; guard++;
       }
+      slide.style.justifyContent = 'center';       // then vertically center the fitted block
     });
   }
   let rz;
